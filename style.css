@@ -1,0 +1,24 @@
+#page-content {
+    font-family: "Poppins";
+    font-style: "italic";
+    text-align: center;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    margin-top: 2%;
+    border-image: linear-gradient(to right, #164194, #8b1065, #e82910)1;
+    border-left: white;
+    border-right: white;
+    border-bottom: white;
+    border-width: 2px;
+    border-style:solid;
+}
+
+.textBox {
+    width: 50%;
+    height: 100px;
+    position: relative;
+}
