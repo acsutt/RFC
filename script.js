@@ -83,15 +83,13 @@ function submit() {
             $(".name").addClass("emptyName");
             $(answer).addClass("emptyInput");
             $("#datepicker").addClass("emptyInput");
-
-            window.scrollTo(0,0);
         }
     }
     firstname = document.getElementById("firstName");
     surname = document.getElementById("surname");
     if (answered < responses.length || datepicker.value == "" || firstname.value == "" || surname.value == "") {
         alert("Please provide answers for all questions and fill in your name.");;
-
+        window.scrollTo(0,0);
     }
     else {
         for (var i = 0; i < responses.length; i++) {
@@ -106,7 +104,14 @@ function submit() {
     }
 }
 
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
 
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
 
 var checkHeader = _.throttle(() => { 
     let scrollPosition = Math.round(window.scrollY);
