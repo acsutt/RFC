@@ -16,13 +16,22 @@
     <!-- <script type='text/javascript' src='/JavaScriptSpellCheck/include.js' ></script>
     <script type='text/javascript'>$Spelling.SpellCheckAsYouType('myTextArea')</script> -->
   </head>  
-  <body onload="startup()">
+  <body onload="startup()" id="body">
     <header class="header">
-        <div class="header__container">
-        </div>
+      <img src="servelec_logo.svg" id="Slogo"></img>
+      <p id="headerTitle">Request for Change</p>
+      <!-- <img src="SDA logo.png" id="SDlogo"></img> -->
     </header>
+    
     <main id="page-content">
-
     </main>
+    
+    <footer class="footer">
+      <input id="firstName" class="name" type="text" placeholder="First name">
+      <input id="surname" class="name" type="text" placeholder="Surname">
+      <button id="submit" onclick="submit()">Submit</button>
+      <img src="newSDLogo.png" id="SDlogo"></img>
+    </footer>
+
   </body>
 </html>
