@@ -1,279 +1,398 @@
-html {
-    scroll-behavior: smooth;
-}
-
-#page-content {
-    margin-top: 94px;
-    font-family: "Poppins";
-    font-style: "italic";
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(211,209,210,0.5);
-    width: 75%;
-    left: 12.5%;
-    position: relative;
-    z-index: 50;
-    min-height: 100%;
-}
-
 * {
-    margin:0;
-    padding: 0;
-    font-family: "Poppins";
-    cursor: default;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
 }
-
-.header {
-    padding-bottom:6px;
-    top: 0px;
-    background: linear-gradient(to left, #164194, #8b1065, #e82910)left bottom rgb(255, 255, 255) no-repeat; 
-    background-size:100% 6px ;
-    width: 100%;
-    height: 94px;
-    position: fixed;
-    transition: padding 300ms ease;
-    z-index: 100;
-}
-
-header.sticky {
-    padding: 10px 20px;
-}
-#headerTitle {
-    color: #494847;
-    left: 41%;
-    width:20%;
-    top: 25%;
-    /* top: 19px; */
-    position: absolute;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-#Slogo {
-    width:7.1%;
-    height:60%;
-    left: 17.45%;
-    top: 17%;
-    position: relative;
-}
-
-#SDlogo {
-    width:12%;
-    left: 60%;
-    top: 50%;
-    position: relative;
-}
-
-.question {
-    margin-top: 2%;
-    width: 100%;
-    left: 15%;
-    position: relative;
-    color: #164194;
-    text-align: left;
-    font-weight: bold;
-    font-size: 110%;
-}
-
-.textBox {
-    font-family: "Poppins";
-    width: 100%;
-    height: 140px;
-    position: relative;
-    left: 15%;
-    font-size: 100%;
-    resize: vertical;
-}
-
-.QA-Block {
-    left: 1.5%;
-    position: relative;
-    width: 75%;
-    margin-bottom: 1%;
-}
-
-#datepicker {
-    font-size: 110%;
-    margin-bottom:0.4%;
-}
-
-.ui-datepicker {
-    margin: 5px auto 0;
-    font-size: 16px;
-    background-color: rgb(223, 223, 223);
-    border: 1px solid black;
-    font-family: "Poppins";
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-}
-
-.ui-datepicker table {
-    width: 100%;
-    border-top: 1px solid black;
-}
-
-.ui-datepicker-title {
-    text-align: center;
-    font-size: 15px;
-}
-
-.ui-datepicker-prev {
-    float: left;
-    cursor: pointer;
-    background-position: center -30px;
-}
-
-.ui-datepicker-next {
-    float: right;
-    cursor: pointer;
-    background-position: center 0px;
-}
-
-.ui-datepicker .ui-datepicker-prev .ui-icon { background-image:none !important; }
-.ui-datepicker .ui-datepicker-next .ui-icon { background-image:none !important; } 
-.ui-datepicker .ui-datepicker-prev .ui-icon:before { content:"<"; }
-.ui-datepicker .ui-datepicker-next .ui-icon:after { content:">"; }
-
-.ui-datepicker th {
-    background-color:#808080;
-    text-transform: uppercase;
-    font-size: 8pt;
-    color: #000000;
-    /*text-shadow: 1px 0px 0px #fff;*/
-    /*filter: dropshadow(color=#fff, offx=1, offy=0);*/
-}
-
-.ui-datepicker tbody td {
-    padding: 0;
-    border: 1px solid #a0a0a0;
-    color: #164194;
-}
-
-.ui-datepicker tbody td .ui-state-hover {
-    font-weight: bold;
-}
-.ui-datepicker a {
-    text-decoration: none;
-}
-.ui-datepicker td span, .ui-datepicker td a {
-    display: inline-block;
-    /*font-weight: bold;*/
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    color: #164194;
-    /*text-shadow: 1px 1px 0px #fff;*/
-    /*filter: dropshadow(color=#fff, offx=1, offy=1);*/
-}
-
-.footer {
-    padding-top:6px;
-    background: linear-gradient(to left, #67D8EC 30%, #99F739 70%) left top rgb(73,72,71) no-repeat; 
-    background-size:100% 6px;
-    width: 100%;
-    position: relative;
-    height: 200px;
-    bottom: -2%;
-}
-
-#submit {
-    background-color: transparent;
-    text-align: center;
-    font-size: 1.5rem;
-    left: 26%;
-    width: 6%;
-    top: 20%;
-    position: relative;
-    color: white;
-    border: 3px solid white;
-}
-#submit:hover {
-    background-color: white;
-    color: #494847;
-    font-weight: bold;
-}
-
-.name {
-    width: 10%;
-    top: -10%;
-    left: 40%;
-    position: relative;
-    background-color: transparent;
-    color: white;
-    border: transparent;
-    border-bottom: 2px solid white;
-    margin: 0.25%;
-    font-size: 1rem;
-}
-
-.emptyInput::-webkit-input-placeholder {
-    color: red;
-}
-
-#SDEmblem {
-    left: 67%;
-    position: relative;
-    width: 5%;
-    top: 53%;
-}
-
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
 }
-   
-  /* Handle */
+/* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #164194;
-    border-radius: 10px;
+  background: #164194;
+  border-radius: 10px;
 }
-  
-  /* Handle on hover */
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #173063; 
+  background: #173063;
+}
+
+:root {
+  --servelec-red: #e82910;
+  --servelec-purple: #8b1065;
+  --servelec-blue: #164194;
+}
+
+.error {
+  color: red;
+}
+
+html,
+body {
+  height: 100%;
+  background: #E9E8E8;
+}
+
+.logo {
+  height: 5%;
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  z-index: 1;
+  cursor: pointer;
 }
 
 
-.slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
 
-  /* Mouse-over effects */
-.slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
+
+
+
+
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .background {
+  height: 45vh;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background: #494847ff;
+}
+.content .RFCForm {
+  position: absolute;
+  display: flex;
+  min-height: 60%;
+  width: 70%;
+  border: 3px solid #494847ff;
+  background: white;
+}
+
+.content .RFCForm #left {
+  min-width: 50%;
+  border-right: 3px solid #494847ff;
+  position: relative;
+  bottom: 0px;
+  background: url("https://www.servelec.co.uk/media/1483/healthcare-consultant-plus-elderly-patient_cmyk-small.png?anchor=center&mode=crop&width=700&height=600&rnd=132114627210000000")
+    no-repeat center center;
+  transition: min-width 0.5s ease;
+}
+.content .RCForm #left img {
+}
+
+.content .RFCForm #right {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  background-color: #f3f3f3ff;
+  width: 100%;
+}
+.content .RFCForm #right .header {
+  margin-bottom: 2%;
+}
+
+.content .RFCForm #right .rightContent {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.content .RFCForm #right .rightContent form {
+  display: flex;
+  flex-direction: column;
+}
+.content .RFCForm #right .rightContent form input {
+  width: 100%;
+  margin: 1% 0 3% 0;
+  padding: 1%;
+}
+
+.content .RFCForm #right .footer {
+  margin-top: 2%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button.submit {
+  transition: all 0.5s ease;
+  padding: 2%;
+  width: 30%;
+  color: white;
+  font-weight: 900;
+  background-color: #004fff;
+}
+button.submit:hover {
+  background-color: blue;
+}
+
+
+
+
+
+
+
+
+/* OPTIONS */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+}
+.option {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  width: 45%;
+}
+.options .option .icon {
+  height: 100%;
+}
+.option .text {
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background-color: #494847ff;
+  height: 40%;
+  padding: 4%;
+  transition: height 500ms;
+  -webkit-transition: height 500ms;
+}
+.options .option .icon {
+  padding: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options .option .icon img {
+  width: 50%;
+}
+.option:hover {
+  cursor: pointer;
+}
+.option:hover .text {
+  height: 60%;
+  transition: height 500ms;
+  -webkit-transition: height 500ms;
+}
+
+
+
+
+
+
+
+
+.makeARequest {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.requestForm {
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.requestForm .question {
+  color: var(--servelec-blue);
+  padding: 1% 0;
+}
+textarea {
+  height: 100%;
+  resize: none;
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+.progressbar {
+}
+.stages {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.stages li:first-child:after {
+  content: none;
+}
+.stages li:before {
+  content: counter(step);
+  -increment: step;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #bebebe;
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  line-height: 27px;
+  background: white;
+  color: #bebebe;
+  text-align: center;
+  font-weight: bold;
+}
+.stages li {
+  width: 30%;
+  position: relative;
+  text-align: center;
+}
+.stages li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #979797;
+  bottom: 75%;
+  left: -50%;
+}
+.stages li.active + li:after {
+  background: var(--servelec-blue);
+  z-index: 0;
+}
+.stages li.active:before,
+.stages li.active + li:before {
+  border-color: #004fff;
+  background: #004fff;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+th {
+  background: #eee;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--servelec-blue);
+  color: white;
+  top: 0px;
+}
+
+.tableContent {
+  border: 1px solid #000;
+  border-left: 0;
+  border-right: 0;
+  overflow-y: auto;
+  height: 420px;
+  /*this line gets rid of border at bottom of table needed when there is <9 elements*/
+  /*   border-bottom:0;  */
+}
+
+.tableContent table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.tableContent th,
+td {
+  border: 1px solid #000;
+  padding: 8px 16px;
+  border-top: 0;
+}
+.tableContent tbody tr:last-child td {
+  /*when 0 it removes the bottom border of last element, set to 0 when there are >9 elements*/
+  border-bottom: 0;
+}
+.tableContent thead th {
+  box-shadow: 1px 1px 0 #000;
+  position: sticky;
+  top: 0;
+  box-shadow: 1px 1px 0 #00;
+}
+.tableContent table tr td:first-child + td {
+  width: 15%;
+}
+.tableContent table tr td:first-child + td + td {
+  width: 10%;
+}
+
+
+
+
+
+
+
+.priorityButtons {
+  display: flex;
+  flex-direction: row;
+  height: 75%;
+  width: 100%;
+  font-size: 12px;
+}
+
+.inputGroup {
+  background: transparent;
+  display: grid;
+  position: relative;
+  width: 33.23%;
+  height: 100%;
+}
+
+label {
+  width: 75%;
+  padding: 10%;
+  display: flex;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  background: #1640944d;
+  transition: 0.3s ease-in;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.prioritySelect:hover ~ label {
+  transition: 0.3s ease-in;
+  background: #1640948d;
+}
+
+.prioritySelect:checked ~ label {
+  color: white;
+  background: var(--servelec-blue);
+}
+
+.prioritySelect {
+  order: 1;
+  z-index: 2;
+  position: relative;
+  transform: translateY(-50%);
+  cursor: pointer;
+  visibility: hidden;
+}
