@@ -2,39 +2,35 @@
 <html lang="en">
   <head>
     <title>Internal RFC</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <!-- import the webpage's javascript file -->
     <script src="script.js" defer></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- <script type='text/javascript' src='/JavaScriptSpellCheck/include.js' ></script>
     <script type='text/javascript'>$Spelling.SpellCheckAsYouType('myTextArea')</script> -->
-  </head>  
-  <body onload="startup()" id="body">
-    <header class="header">
-      <img src="servelec_logo.svg" id="Slogo"></img>
-      <p id="headerTitle">Request for Change</p>
-      <!-- <img src="SDA logo.png" id="SDlogo"></img> -->
-    </header>
-    
-    <main id="page-content">
-      <div class="sliderContainer">
-        <input type="range" min="1"  max="100000" value="15" class="slider" id="myRange">
+  </head>
+  <body>
+    <div class="content">
+      <img
+        class="logo"
+        src="https://cdn.glitch.com/d66e74b3-acc7-403c-b17e-9e443968d32a%2FnewSDLogo.png?v=1579617391361"
+        onclick="validateInputs('options', false)"
+      />
+      <div class="background"></div>
+      <div class="RFCForm">
+        <div id="left"></div>
+        <div id="right"></div>
       </div>
-    </main>
-    
-    <footer class="footer">
-      <input id="firstName" class="name" type="text" placeholder="First name">
-      <input id="surname" class="name" type="text" placeholder="Surname">
-      <button id="submit" onclick="submit()">Submit</button>
-      <img src="newSDLogo.png" id="SDlogo"></img>
-    </footer>
- 
+    </div>
   </body>
 </html>
